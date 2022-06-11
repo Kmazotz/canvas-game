@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas-Game</title>
+    <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+    <div id="game-score">
+        <p>Score: <span id="game-punctuation">0</span></p>
+    </div>
+    <div class="game-nick">
+        <p id="game-nick-name">NickName</p>
+    </div>
+    <canvas></canvas>
+    <div class="game-over" id="game-over">
+        <div class="game-over-container">
+            <article>
+                <h1>GAME OVER</h1>
+                <h2 id="game-over-score">0</h2>
+                <h3>Points</h3>
+                <p>Please try again!</p>
+                <button id="restartGame">Restart</button>
+            </article>
+        </div>
+    </div>
+
+    <div class="game-start active" id="game-start">
+        <div class="game-start-container">
+            <article>
+                <h1>WELCOME</h1>
+                <p>Please put your <strong>NickName</strong></p>
+                <input type="text" name="nickname" id="nickname" maxlength="5" title="NickName">
+                <button id="startGame">Start</button>
+            </article>
+        </div>
+    </div>
+
+    <script src="./gsap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
